@@ -49,14 +49,22 @@
 
       <label for="name">Which option best describes your current role?</label
       ><br />
-      <input
-        type=""
-        id="email"
-        name="email"
-        autocomplete="name"
-        placeholder="Enter Your Email"
-      />
+      <input type="radio" id="male" name="gender" value="Definitely" />
+      <label for="Definitely">Definitely</label><br />
+      <input type="radio" id="female" name="gender" value="Maybe" />
+      <label for="Maybe">Maybe</label><br />
+      <input type="radio" id="other" name="gender" value="Not Sure" />
+      <label for="Not Sure">Not Sure</label>
       <br />
+
+      <label for="name">What is your favorite feature of freeCodeCamp?</label
+      ><br />
+      <select name="name" id="dropdown">
+        <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="Open Source">Open Source</option>
+      </select>
     </form>
   </body>
 
