@@ -17,7 +17,7 @@
       </header>
       <form id="survey-form" action="" method="post">
         <div>
-          <label for="name">Name</label><br />
+          <label id="name-label" for="name">Name</label><br />
           <input
             type="text"
             id="name"
@@ -30,28 +30,30 @@
         <br />
 
         <div>
-          <label for="name">Email</label><br />
+          <label id="email-label" for="email">Email</label><br />
           <input
             type="email"
             id="email"
             name="email"
             autocomplete="name"
             placeholder="Enter Your Email"
+            required
           />
         </div>
 
         <br />
 
         <div>
-          <label for="name">Age(Optional)</label><br />
+          <label id="number-label" for="number">Age(Optional)</label><br />
           <input
             type="number"
             id="number"
-            min="18"
+            min="10"
             max="70"
             name="Age"
-            autocomplete="name"
+            autocomplete="number"
             placeholder="Age"
+            required
           />
         </div>
 
@@ -60,11 +62,11 @@
         <div>
           <label for="name">Would you recommend freeCodeCamp to a friend?</label
           ><br />
-          <input type="radio" id="male" name="Definitely" value="Definitely" />
+          <input type="radio" id="male" name="name" value="Definitely" />
           <label for="Definitely">Definitely</label><br />
-          <input type="radio" id="female" name="Maybe" value="Maybe" />
+          <input type="radio" id="female" name="name" value="Maybe" />
           <label for="Maybe">Maybe</label><br />
-          <input type="radio" id="other" name="Not Sure" value="Not Sure" />
+          <input type="radio" id="other" name="name" value="Not Sure" />
           <label for="Not Sure">Not Sure</label>
         </div>
 
@@ -166,7 +168,7 @@
           </textarea>
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </div>
       </form>
     </div>
