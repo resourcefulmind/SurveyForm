@@ -55,20 +55,21 @@ button {
 #container {
     width: 100%;
     margin: 50px auto 0 auto;
-
-    @media (min-width: 576px) {
-        #container {
-            max-width: 540px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        #container {
-            max-width: 720px;
-        }
-    }
-    
 }
+
+@media (min-width: 576px) {
+    #container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        max-width: 720px;
+    }
+}
+    
+
 
 .header {
     padding: 0 10px;
